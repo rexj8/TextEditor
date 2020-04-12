@@ -36,7 +36,7 @@ class TextAreaExample extends Frame implements ActionListener {
 
     }
 
-    public void actionPerformed(ActionEvent e) {
+    public void actionPerformed(ActionEvent e) {                       // button ActionListener
         String text = area.getText();
         String words[] = text.split("\\s");
         l1.setText("Words: " + words.length);
