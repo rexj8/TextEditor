@@ -33,6 +33,7 @@ class TextAreaExample extends Frame implements ActionListener {
 
     public static void main(String[] args) {
         new TextAreaExample();
+
     }
 
     public void actionPerformed(ActionEvent e) {
