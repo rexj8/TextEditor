@@ -1,13 +1,18 @@
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 class TextAreaExample extends Frame implements ActionListener {
+    JFrame frame;
     Label l1, l2;
     TextArea area;
     Button b;
 
     TextAreaExample() {
+
+        frame = new JFrame();
+
         l1 = new Label();
         l1.setBounds(50, 50, 100, 30);
         l2 = new Label();
@@ -17,13 +22,13 @@ class TextAreaExample extends Frame implements ActionListener {
         b = new Button("Count Words");
         b.setBounds(100, 400, 100, 30);
         b.addActionListener(this);
-        add(l1);
-        add(l2);
-        add(area);
-        add(b);
-        setSize(400, 450);
-        setLayout(null);
-        setVisible(true);
+        frame.add(l1);
+        frame.add(l2);
+        frame.add(area);
+        frame.add(b);
+        frame.setSize(400, 500);
+        frame.setLayout(null);
+        frame.setVisible(true);
     }
 
     public static void main(String[] args) {
